@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynthImageHub</title>
+    <link rel="stylesheet" type="text/css" href="CodeHub.css">
+</head>
+<body>
+
+    <header>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button onclick="searchImages()">Search</button>
+        </div>
+        <button onclick="showSection('pictures')">Pictures</button>
+        <button onclick="showSection('categories')">Categories</button>
+    </header>
+    
+
+<section id="pictures">
+    <h2>All Pictures</h2>
+
+    <ul class="category-images" id="animals-images"></ul>
+
+    <ul class="category-images" id="anime-images"></ul>
+
+    <ul class="category-images" id="historical-places-images"></ul>
+
+    <ul class="category-images" id="space-images"></ul>
+
+    <ul class="category-images" id="Fashion-images"></ul>
+
+    <ul class="category-images" id="Sports-images"></ul>
+
+    <ul class="category-images" id="Cars-images"></ul>
+
+    <ul class="category-images" id="Technology-images"></ul>
+
+    <ul class="category-images" id="Christmas-images"></ul>
+
+    <ul class="category-images" id="Music-images"></ul>
+
+    <ul class="category-images" id="Nature-images"></ul>
+
+    <ul class="category-images" id="Study-images"></ul>
+
+    <ul class="category-images" id="Party-images"></ul>
+
+    <ul class="category-images" id="Kids-images"></ul>
+
+    <ul class="category-images" id="Camping-images"></ul>
+
+    <ul class="category-images" id="Magic-images"></ul>
+
+
+</section>
+
+
+<section id="Animals" style="display: none;">
+    <h2>Animals</h2>
+    <ul>
+        <li>
+            <img src="img/Lion.jpg">
+        </li>
+        <li>
+            <img src="img/fox.jpg">
+        </li>
+        <li>
+            <img src="img/ele.jpg">
+        </li>
+        <li>
+            <img src="img/gazal.jpg">
+        </li>
+        <li>
+            <img src="img/tiger.jpeg">
+        </li>
+        
+        
+</section>
+
+<section id="Anime" style="display: none;">
+    <h2>Anime</h2>
+    <ul>
+        <li>
+            <img src="img/kakashi.jpg">
+        </li>
+        <li>
+            <img src="img/girl1.jpeg">
+        </li>
+        <li>
+            <img src="img/kaniki.jpg">
+        </li>
+        <li>
+            <img src="img/gym.jpeg">
+        </li>
+        <li>
+            <img src="img/girl2.jpeg">
+        </li>
+        
+    </ul>
+</section>
+
+<section id="Historical places" style="display: none;">
+    <h2>Historical places</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/pyra.webp">
+            </li>
+            <li>
+                <img src="img/Colosseum.webp">
+            </li>
+            <li>
+                <img src="img/city.webp">
+            </li>
+            <li>
+                <img src="img/wall.webp">
+            </li>
+            <li>
+                <img src="img/india.jpeg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Space" style="display: none;">
+    <h2>Space</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/sp1.jpg">
+            </li>
+            <li>
+                <img src="img/sp2.webp">
+            </li>
+            <li>
+                <img src="img/sp3.webp">
+            </li>
+            <li>
+                <img src="img/sp4.jpg">
+            </li>
+            <li>
+                <img src="img/sp5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Magic" style="display: none;">
+    <h2>Magic</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Magic1.jpg">
+            </li>
+            <li>
+                <img src="img/Magic2.jpg">
+            </li>
+            <li>
+                <img src="img/Magic3.jpg">
+            </li>
+            <li>
+                <img src="img/Magic4.jpg">
+            </li>
+            <li>
+                <img src="img/Magic5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Fashion" style="display: none;">
+    <h2>Fashion</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Fashion1.jpg">
+            </li>
+            <li>
+                <img src="img/Fashion2.jpg">
+            </li>
+            <li>
+                <img src="img/Fashion3.jpg">
+            </li>
+            <li>
+                <img src="img/Fashion4.jpg">
+            </li>
+            <li>
+                <img src="img/Fashion5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Sports" style="display: none;">
+    <h2>Sports</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Sports1.jpg">
+            </li>
+            <li>
+                <img src="img/Sports2.jpg">
+            </li>
+            <li>
+                <img src="img/Sports3.jpg">
+            </li>
+            <li>
+                <img src="img/Sports4.jpg">
+            </li>
+            <li>
+                <img src="img/Sports5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Cars" style="display: none;">
+    <h2>Cars</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Cars1.jpg">
+            </li>
+            <li>
+                <img src="img/Cars2.jpg">
+            </li>
+            <li>
+                <img src="img/Cars3.jpg">
+            </li>
+            <li>
+                <img src="img/Cars4.jpg">
+            </li>
+            <li>
+                <img src="img/Cars5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Technology" style="display: none;">
+    <h2>Technology</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Technology1.jpg">
+            </li>
+            <li>
+                <img src="img/Technology2.jpg">
+            </li>
+            <li>
+                <img src="img/Technology3.jpg">
+            </li>
+            <li>
+                <img src="img/Technology4.jpg">
+            </li>
+            <li>
+                <img src="img/Technology5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Christmas" style="display: none;">
+    <h2>Christmas</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Christmas1.jpg">
+            </li>
+            <li>
+                <img src="img/Christmas2.jpg">
+            </li>
+            <li>
+                <img src="img/Christmas3.jpg">
+            </li>
+            <li>
+                <img src="img/Christmas4.jpg">
+            </li>
+            <li>
+                <img src="img/Christmas5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Music" style="display: none;">
+    <h2>Music</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Music1.jpg">
+            </li>
+            <li>
+                <img src="img/Music2.jpg">
+            </li>
+            <li>
+                <img src="img/Music3.jpg">
+            </li>
+            <li>
+                <img src="img/Music4.jpg">
+            </li>
+            <li>
+                <img src="img/Music5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Nature" style="display: none;">
+    <h2>Nature</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Nature1.jpg">
+            </li>
+            <li>
+                <img src="img/Nature2.jpg">
+            </li>
+            <li>
+                <img src="img/Nature3.jpg">
+            </li>
+            <li>
+                <img src="img/Nature4.jpg">
+            </li>
+            <li>
+                <img src="img/Nature5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Study" style="display: none;">
+    <h2>Study</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Study1.jpg">
+            </li>
+            <li>
+                <img src="img/Study2.jpg">
+            </li>
+            <li>
+                <img src="img/Study3.jpg">
+            </li>
+            <li>
+                <img src="img/Study4.jpg">
+            </li>
+            <li>
+                <img src="img/Study5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Party" style="display: none;">
+    <h2>Party</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Party1.jpg">
+            </li>
+            <li>
+                <img src="img/Party2.jpg">
+            </li>
+            <li>
+                <img src="img/Party3.jpg">
+            </li>
+            <li>
+                <img src="img/Party4.jpg">
+            </li>
+            <li>
+                <img src="img/Party5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+<section id="Kids" style="display: none;">
+    <h2>Kids</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Kids1.jpg">
+            </li>
+            <li>
+                <img src="img/Kids2.jpg">
+            </li>
+            <li>
+                <img src="img/Kids3.jpg">
+            </li>
+            <li>
+                <img src="img/Kids4.jpg">
+            </li>
+            <li>
+                <img src="img/Kids5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+
+<section id="Camping" style="display: none;">
+    <h2>Camping</h2>
+    <ul>
+        <li>
+            <li>
+                <img src="img/Camping1.jpg">
+            </li>
+            <li>
+                <img src="img/Camping2.jpg">
+            </li>
+            <li>
+                <img src="img/Camping3.jpg">
+            </li>
+            <li>
+                <img src="img/Camping4.jpg">
+            </li>
+            <li>
+                <img src="img/Camping5.jpg">
+            </li>
+        </li>
+    </ul>
+</section>
+
+
+<section id="categories">
+    <h2>Categories</h2>
+    <div class="category">
+        <img src="img/Animals.jpg" alt="Animals Category">
+        <h3>Animals</h3>
+        <button onclick="showSubsection('Animals')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Anime.jpg" alt="Anime Category">
+        <h3>Anime</h3>
+        <button onclick="showSubsection('Anime')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Historical places.jpg" alt="Historical places Category">
+        <h3>Historical places</h3>
+        <button onclick="showSubsection('Historical places')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Space.jpg" alt="Space Category">
+        <h3>Space</h3>
+        <button onclick="showSubsection('Space')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Fashion.jpg" alt="Fashion Category">
+        <h3>Fashion</h3>
+        <button onclick="showSubsection('Fashion')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Sports.jpg" alt="Sports Category">
+        <h3>Sports</h3>
+        <button onclick="showSubsection('Sports')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Cars.jpg" alt="Cars Category">
+        <h3>Cars</h3>
+        <button onclick="showSubsection('Cars')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Technology.jpg" alt="Technology Category">
+        <h3>Technology</h3>
+        <button onclick="showSubsection('Technology')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Christmas.jpg" alt="Christmas Category">
+        <h3>Christmas</h3>
+        <button onclick="showSubsection('Christmas')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Music.jpg" alt="Music Category">
+        <h3>Music</h3>
+        <button onclick="showSubsection('Music')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Nature.jpg" alt="Nature Category">
+        <h3>Nature</h3>
+        <button onclick="showSubsection('Nature')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Study.jpg" alt="Study Category">
+        <h3>Study</h3>
+        <button onclick="showSubsection('Study')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Party.jpg" alt="Party Category">
+        <h3>Party</h3>
+        <button onclick="showSubsection('Party')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Kids.jpg" alt="Kids Category">
+        <h3>Kids</h3>
+        <button onclick="showSubsection('Kids')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Camping.jpg" alt="Camping Category">
+        <h3>Camping</h3>
+        <button onclick="showSubsection('Camping')">Enter</button>
+    </div>
+    <div class="category">
+        <img src="img/Magic.jpg" alt="Magic Category">
+        <h3>Magic</h3>
+        <button onclick="showSubsection('Magic')">Enter</button>
+    </div>
+</section>
+
+
+    <section id="upload">
+        <h2>Upload Image</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="category">Category:</label>
+            <input type="text" name="category" required>
+            
+            <label for="title">Title:</label>
+            <input type="text" name="title" required>
+    
+            <label for="image">Image:</label>
+            <input type="file" name="image" accept="image/*" required>
+    
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+    
+
+
+
+
+<footer>
+    <p>&copy; 2023 SynthImageHub</p>
+</footer>
+
+<script src="CodeHub.js"></script>
+
+</body>
+</html>
